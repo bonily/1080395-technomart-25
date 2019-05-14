@@ -7,6 +7,9 @@ h1 {
   color: #ee3643;
   font-size: 16px;
 }
+.header-top-line {
+  background-color: #293449;
+}
 .header-bottom-line {
   background-color: #32425c;
 }
@@ -16,7 +19,4 @@ h1 {
 }
 .footer-bottom-line {
   background-color: #293449;
-}
-.new-price {
-
 }
