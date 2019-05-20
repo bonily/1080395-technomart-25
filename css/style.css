@@ -3,7 +3,32 @@
 a {
   color: green;
 }
+.main-header-logo {
+  display: block;
+  width: 220px;
+  height: 47px;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  text-align: center;
+    }
 
+.main-header-logo:hover {
+  background-color: #ca2c37;
+}
+
+/*.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+*/
 
 h1 {
   color: #ee3643;
