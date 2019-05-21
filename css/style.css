@@ -1,9 +1,30 @@
 
+body {
+margin: 0;
+padding: 0;
+font-family: 'PT Sans', sans-serif;
+font-size: 13px;
+line-height: 24px;
+font-weight: 400;
+color: #000000;
+background-color: #ffffff;
+}
+
+
+
 
 a {
+  text-decoration: none;
   color: green;
 }
+
+.site-navigation,
+.users-navigation {
+  list-style: none;
+  }
+
 .main-header-logo {
+  position: relative;
   display: block;
   width: 220px;
   height: 47px;
@@ -15,6 +36,439 @@ a {
 .main-header-logo:hover {
   background-color: #ca2c37;
 }
+
+.logo__image {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 109px;
+ height: 19px;
+}
+
+.header-top-line {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.header-top-line a{
+  color: #ffffff;
+}
+
+.main-search {
+  background-color: #293449;
+
+}
+
+.main-search:hover {
+  background-color: #212a3a;
+}
+
+
+.search button {
+  border: 0px;
+  background-color: transparent;
+  background: url("../img/icon-search.svg") no-repeat;
+  background-size: 17px 17px;
+  background-position: center center;
+  opacity: .3;
+  width: 49px;
+  height: 42px;
+}
+
+.search input {
+  border: 0px;
+  background-color: transparent;
+  width: 221px;
+  height: 42px;
+}
+
+.search button:hover {
+  opacity: 1;
+}
+
+.marks {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  width: 150px;
+  height: 42px;
+}
+
+.marks:hover {
+ background-color: #212a3a;
+}
+
+.marks-image {
+  opacity: .3;
+}
+
+.marks:hover .marks-image{
+  opacity: 1;
+}
+
+.buy {
+  position: relative;
+  display: block;
+  background-color: #63a63e;
+  width: 150px;
+  height: 42px;
+}
+.buy:hover {
+ background-color: #5fbb2d;
+}
+
+.header-middle-line, .header-bottom-line {
+  background-color: #f1f5f7;
+}
+
+.header-middle-line {
+  font-family: 'Cuprum', sans-serif;
+  color: #000000;
+}
+
+
+h1 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ee3643;
+
+}
+
+.header-middle-line a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+.header-contact {
+  color: #32425c;
+}
+
+.header-number {
+  position: relative;
+  display: block;
+  border: 1px solid white;
+  width: 270px;
+  height: 45px;
+  color: #ee3643;
+}
+
+a.header-number {
+  color: #ee3643;
+}
+
+.users-navigation li {
+  background-color: #ffffff;
+}
+
+
+.enter {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 45px;
+}
+
+.login-svg {
+  opacity: .3;
+}
+.registration{
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 45px;
+}
+
+.enter:hover a.enter {
+    color: #ee3643;
+}
+
+.enter:hover .login-svg{
+  opacity: 1;
+}
+
+.user:hover .login-svg{
+  opacity: 1;
+}
+
+
+.registration:hover a.registration{
+    color: #ee3643;
+}
+ul.site-navigation li {
+   display: inline;
+}
+ul.breadcrumbs li {
+   display: inline;
+}
+
+.main-nav {
+  display: block;
+  background-color: #32425c;
+  width: 940px;
+  height: 60px;
+}
+
+.main-nav a {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  }
+
+.main-nav a:hover {
+  background-color: #1d2739;
+}
+
+h2 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.main-catalog-button {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  display: block;
+  width: 300px;
+  height: 123px;
+  background-color: red;
+}
+
+.about-catalog {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.small-catalog-button {
+  display: block;
+  width: 136px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+
+  }
+
+
+.button-materials {
+  background-color: #ffbf47;
+}
+
+.button-materials:hover .small-catalog-button,
+.button-instruments:hover .small-catalog-button,
+.button-technics:hover .small-catalog-button,
+.button-sales:hover .small-catalog-button,
+.button-delivery:hover .small-catalog-button
+ {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.button-instruments {
+  background-color: #3bbce3;
+}
+
+.button-technics {
+  background-color: #dc91d8;
+}
+
+.button-sales {
+  background-color: #8ed78f;
+}
+
+.button-delivery {
+  background-color: #ffc047;
+}
+
+.popular-top-line {
+  display: block;
+  width: 940px;
+  height: 90px;
+  background-color: #f9f5f0;
+
+}
+
+h3 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h3.page-title {
+  color: #32425c;
+}
+legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.filter-option {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+.about-company {
+  width: 535px;
+  height: 319px;
+}
+.юdelivery-companies {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts {
+  width: 301px;
+  height: 319px;
+}
+
+.write-reviews,
+.big-map,
+.modal-basket-tools {
+  display: none;
+}
+
+.main-footer-logo {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 68px;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  text-align: center;
+    }
+
+.footer-top-line {
+  width: 1200px;
+  height: 100px;
+  background-color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-top-line a{
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+ul.main-footer-navigation li,
+ul.footer-calalog-navigation li
+{
+   display: inline;
+}
+
+.footer-top-line a:hover {
+text-decoration: underline;
+}
+
+.footer-middle-line {
+  width: 1200px;
+  height: 93px;
+  background-color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-middle-line a{
+    color: #ffd180;
+}
+
+ .footer-contact a {
+  color: #ffffff;
+}
+.footer-middle-line a:hover {
+text-decoration: underline;
+}
+
+.footer-bottom-line {
+  width: 1200px;
+  height: 107px;
+  background-color: #293449;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-bottom-line a{
+    color: #ffd180;
+}
+
+
+
+.button-social {
+  position: relative;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #212a3a;
+}
+.button-social:hover {
+  background: #ee3643;
+}
+
+ .button-social-vk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/icon-vk.svg") no-repeat;
+  background-size: 26px 15px;
+  background-position: center center;
+  width: 26px;
+  height: 15px;
+}
+
+.button-social-fb {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: url("../img/icon-fb.svg") no-repeat;
+ background-size: 12px 22px;
+ background-position: center center;
+ width: 12px;
+ height: 22px;
+}
+
+.button-social-ig {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: url("../img/icon-insta.svg") no-repeat;
+ background-size: 21px 21px;
+ background-position: center center;
+ width: 21px;
+ height: 21px;
+}
+
 
 /*.visually-hidden {
   border: 0;
@@ -29,23 +483,89 @@ a {
   white-space: nowrap;
 }
 */
-
-h1 {
-  color: #ee3643;
+a.users-navigation {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+}
+a.orders,
+a.personal-area {
+  color: #32425c;
   font-size: 16px;
+  line-height: 18px;
 }
-.header-top-line {
-  background-color: #293449;
+
+.orders:hover,
+.personal-area:hover {
+  text-decoration: underline;
+  color: red;
 }
-.header-bottom-line {
-  background-color: #32425c;
+.profile {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 45px;
+  background-color: white;
 }
+
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 13px;
+  color: #000000;
+  text-decoration: uppercase;
+}
+
+
+.catalog-list {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+    color: #000000;
+}
+.new-price {
+  position: relative;
+  display: block;
+  width: 141px;
+  height: 38px;
+  background: url("../img/red-button.svg") no-repeat;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.del-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.about-drill {
+  font-size: 13px;
+  line-height: 24px;
+  height: 940px;
+  weight: 151px;
+}
+
+
+
+
+
 .button {
   background-color: #ee3643;
-  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
 }
-.footer-bottom-line {
-  background-color: #293449;
+.filter-button {
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 input.visually-hidden {
