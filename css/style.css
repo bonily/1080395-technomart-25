@@ -9,6 +9,10 @@ body {
   background-color: #ffffff;
   width: 1200px;
 }
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
 
 a {
   text-decoration: none;
@@ -79,10 +83,12 @@ a {
   font-family: 'Cuprum', sans-serif;
   font-size: 17px;
   line-height: 18px;
+  color: #ffffff;
   border: 0px;
   background-color: transparent;
   width: 221px;
   height: 42px;
+  placeholder-
 }
 
 .search button:hover {
@@ -316,7 +322,7 @@ legend {
 }
 
 .filter-option {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -443,8 +449,8 @@ ul.footer-calalog-navigation li {
   height: 107px;
   background-color: #293449;
   font-family: 'Cuprum', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   color: #ffffff;
 }
