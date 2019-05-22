@@ -1,17 +1,14 @@
-
 body {
-margin: 0;
-padding: 0;
-font-family: 'PT Sans', sans-serif;
-font-size: 13px;
-line-height: 24px;
-font-weight: 400;
-color: #000000;
-background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  width: 1200px;
 }
-
-
-
 
 a {
   text-decoration: none;
@@ -21,7 +18,7 @@ a {
 .site-navigation,
 .users-navigation {
   list-style: none;
-  }
+}
 
 .main-header-logo {
   position: relative;
@@ -31,19 +28,19 @@ a {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   text-align: center;
-    }
+}
 
 .main-header-logo:hover {
   background-color: #ca2c37;
 }
 
 .logo__image {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- width: 109px;
- height: 19px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 109px;
+  height: 19px;
 }
 
 .header-top-line {
@@ -55,19 +52,17 @@ a {
   background-color: #293449;
 }
 
-.header-top-line a{
+.header-top-line a {
   color: #ffffff;
 }
 
 .main-search {
   background-color: #293449;
-
 }
 
 .main-search:hover {
   background-color: #212a3a;
 }
-
 
 .search button {
   border: 0px;
@@ -81,6 +76,9 @@ a {
 }
 
 .search input {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   border: 0px;
   background-color: transparent;
   width: 221px;
@@ -100,14 +98,14 @@ a {
 }
 
 .marks:hover {
- background-color: #212a3a;
+  background-color: #212a3a;
 }
 
 .marks-image {
   opacity: .3;
 }
 
-.marks:hover .marks-image{
+.marks:hover .marks-image {
   opacity: 1;
 }
 
@@ -118,8 +116,9 @@ a {
   width: 150px;
   height: 42px;
 }
+
 .buy:hover {
- background-color: #5fbb2d;
+  background-color: #5fbb2d;
 }
 
 .header-middle-line, .header-bottom-line {
@@ -131,13 +130,12 @@ a {
   color: #000000;
 }
 
-
 h1 {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 23px;
   font-weight: 400;
   color: #ee3643;
-
+  font-style: italic;
 }
 
 .header-middle-line a {
@@ -145,7 +143,10 @@ h1 {
   line-height: 21px;
   color: #000000;
 }
+
 .header-contact {
+  font-size: 14px;
+  line-height: 24px;
   color: #32425c;
 }
 
@@ -166,7 +167,6 @@ a.header-number {
   background-color: #ffffff;
 }
 
-
 .enter {
   position: relative;
   display: block;
@@ -177,7 +177,8 @@ a.header-number {
 .login-svg {
   opacity: .3;
 }
-.registration{
+
+.registration {
   position: relative;
   display: block;
   width: 150px;
@@ -185,26 +186,27 @@ a.header-number {
 }
 
 .enter:hover a.enter {
-    color: #ee3643;
+  color: #ee3643;
 }
 
-.enter:hover .login-svg{
+.enter:hover .login-svg {
   opacity: 1;
 }
 
-.user:hover .login-svg{
+.user:hover .login-svg {
   opacity: 1;
 }
 
-
-.registration:hover a.registration{
-    color: #ee3643;
+.registration:hover a.registration {
+  color: #ee3643;
 }
+
 ul.site-navigation li {
-   display: inline;
+  display: inline;
 }
+
 ul.breadcrumbs li {
-   display: inline;
+  display: inline;
 }
 
 .main-nav {
@@ -220,7 +222,7 @@ ul.breadcrumbs li {
   line-height: 17px;
   font-weight: 400;
   color: #ffffff;
-  }
+}
 
 .main-nav a:hover {
   background-color: #1d2739;
@@ -233,7 +235,6 @@ h2 {
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
-
 }
 
 .main-catalog-button {
@@ -259,9 +260,7 @@ h2 {
   height: 40px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-
-  }
-
+}
 
 .button-materials {
   background-color: #ffbf47;
@@ -271,8 +270,7 @@ h2 {
 .button-instruments:hover .small-catalog-button,
 .button-technics:hover .small-catalog-button,
 .button-sales:hover .small-catalog-button,
-.button-delivery:hover .small-catalog-button
- {
+.button-delivery:hover .small-catalog-button {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -297,7 +295,6 @@ h2 {
   width: 940px;
   height: 90px;
   background-color: #f9f5f0;
-
 }
 
 h3 {
@@ -307,26 +304,62 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
 }
+
 h3.page-title {
   color: #32425c;
 }
+
 legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
 }
+
 .filter-option {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
 }
 
+.services {
+  background-color: #f4f8f9;
+}
+
+.services-navigation li {
+  display: block;
+  width: 240px;
+  height: 63px;
+  background-color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+li.main-services {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.main-service-title {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.main-service {
+  background: url(../img/delivery-car.png) no-repeat;
+}
 
 .about-company {
   width: 535px;
   height: 319px;
 }
-.юdelivery-companies {
+
+.delivery-companies {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -352,7 +385,7 @@ legend {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   text-align: center;
-    }
+}
 
 .footer-top-line {
   width: 1200px;
@@ -365,7 +398,7 @@ legend {
   color: #ffffff;
 }
 
-.footer-top-line a{
+.footer-top-line a {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -374,13 +407,12 @@ legend {
 }
 
 ul.main-footer-navigation li,
-ul.footer-calalog-navigation li
-{
-   display: inline;
+ul.footer-calalog-navigation li {
+  display: inline;
 }
 
 .footer-top-line a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-middle-line {
@@ -394,15 +426,16 @@ text-decoration: underline;
   color: #ffffff;
 }
 
-.footer-middle-line a{
-    color: #ffd180;
+.footer-middle-line a {
+  color: #ffd180;
 }
 
- .footer-contact a {
+.footer-contact a {
   color: #ffffff;
 }
+
 .footer-middle-line a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-bottom-line {
@@ -416,11 +449,11 @@ text-decoration: underline;
   color: #ffffff;
 }
 
-.footer-bottom-line a{
-    color: #ffd180;
+.footer-bottom-line a {
+  color: #ffd180;
+  font-size: 16px;
+  line-height: 18px;
 }
-
-
 
 .button-social {
   position: relative;
@@ -429,11 +462,12 @@ text-decoration: underline;
   border-radius: 50%;
   background: #212a3a;
 }
+
 .button-social:hover {
   background: #ee3643;
 }
 
- .button-social-vk {
+.button-social-vk {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -446,29 +480,28 @@ text-decoration: underline;
 }
 
 .button-social-fb {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background: url("../img/icon-fb.svg") no-repeat;
- background-size: 12px 22px;
- background-position: center center;
- width: 12px;
- height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/icon-fb.svg") no-repeat;
+  background-size: 12px 22px;
+  background-position: center center;
+  width: 12px;
+  height: 22px;
 }
 
 .button-social-ig {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background: url("../img/icon-insta.svg") no-repeat;
- background-size: 21px 21px;
- background-position: center center;
- width: 21px;
- height: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/icon-insta.svg") no-repeat;
+  background-size: 21px 21px;
+  background-position: center center;
+  width: 21px;
+  height: 21px;
 }
-
 
 /*.visually-hidden {
   border: 0;
@@ -489,6 +522,7 @@ a.users-navigation {
   line-height: 21px;
   font-weight: 400;
 }
+
 a.orders,
 a.personal-area {
   color: #32425c;
@@ -501,6 +535,7 @@ a.personal-area {
   text-decoration: underline;
   color: red;
 }
+
 .profile {
   position: relative;
   display: block;
@@ -511,18 +546,22 @@ a.personal-area {
 
 .breadcrumbs a {
   font-size: 13px;
-  line-height: 13px;
+  line-height: 18px;
   color: #000000;
   text-decoration: uppercase;
 }
-
 
 .catalog-list {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-    color: #000000;
+  color: #000000;
 }
+
+.catalog-list a {
+  color: #000000;
+}
+
 .new-price {
   position: relative;
   display: block;
@@ -535,6 +574,7 @@ a.personal-area {
   color: #ffffff;
   text-transform: uppercase;
 }
+
 .del-price {
   font-size: 17px;
   line-height: 18px;
@@ -546,12 +586,8 @@ a.personal-area {
   font-size: 13px;
   line-height: 24px;
   height: 940px;
-  weight: 151px;
+  width: 151px;
 }
-
-
-
-
 
 .button {
   background-color: #ee3643;
@@ -562,6 +598,7 @@ a.personal-area {
   color: #ffffff;
   text-transform: uppercase;
 }
+
 .filter-button {
   background-color: #ffffff;
   color: #000000;
@@ -573,20 +610,20 @@ input.visually-hidden {
 }
 
 label {
- width: 23px;
- height: 23px;
- position: relative;
+  width: 23px;
+  height: 23px;
+  position: relative;
 }
 
-input[type="checkbox"] + span {
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/checkbox-off.svg) no-repeat;
-    }
+input[type="checkbox"]+span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/checkbox-off.svg) no-repeat;
+}
 
-  input[type="checkbox"]:checked + span {
-   background: url(../img/checkbox-on.svg) no-repeat;
-
- }
+input[type="checkbox"]:checked+span {
+  background: url(../img/checkbox-on.svg) no-repeat;
+}
