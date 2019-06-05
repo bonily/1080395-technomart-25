@@ -34,7 +34,7 @@
           <p class="basket">
             Корзина: <span>0</span></p>
         </a>
-        <a href="#" class="buy">Оформить заказ</a>
+        <a href="#" class="checkout">Оформить заказ</a>
       </div>
     </div>
 
@@ -105,16 +105,17 @@
           </div>
           <div class="catalog-double-line">
             <li class="slaider">
-              <img src="img/icon-left.svg" class="icon-left">
-              <img src="img/icon-left.svg" class="icon-right">
-              <a class="button button-slaider" href="#">Открыть каталог</a>
+              <a href="#"><img src="img/icon-left.svg" class="icon-left"></a>
+              <a href="#"><img src="img/icon-left.svg" class="icon-right"></a>
+
               <div class="slaider-drill">
                 <p class="slaider-title">
                   Дрели<br>
                   <span class="slaider-text">Соседям на радость!</span></p>
                 <img src="img/Slaider-Drill.jpg" width="620" height="266" alt="Мужчина с дрелью" class="img-slaider">
-                <!-- <img src="img/dots-no.svg" width="10" height="10" class="dots-no">
-                <img src="img/dots-yes.svg" width="10" height="10" class="dots-yes"> -->
+                <img src="img/dots-no.svg" width="10" height="10" class="dots-left">
+                <img src="img/dots-yes.svg" width="10" height="10" class="dots-right">
+                  <a class="button button-slaider" href="#">Открыть каталог</a>
               </div>
               <div class="slaider-perforator">
                 <p class="slaider-title">
@@ -123,6 +124,7 @@
                 <img src="img/Slaider-perforator.jpg" width="620" height="266" alt="Мужчина с дрелью" class="img-slaider">
                 <img src="img/dots-yes.svg" width="10" height="10" class="dots-left">
                 <img src="img/dots-no.svg" width="10" height="10" class="dots-right">
+                  <a class="button button-slaider" href="#">Открыть каталог</a>
               </div>
             </li>
             <div>
@@ -150,7 +152,7 @@
       <section class="popular-goods">
 
         <div class="popular-top-line">
-          <h2>Популярные товары</h2>
+          <h2 class="small-tittle">Популярные товары</h2>
           <a class="button button-popular" href="">Все популярные товары</a>
         </div>
         <ul class="catalog-list">
@@ -159,7 +161,7 @@
             <a href="catalog-item.html">
 
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="img/product-4.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
@@ -180,7 +182,7 @@
           <li class="catalog-item">
             <a href="catalog-item.html">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="img/product-1.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -201,7 +203,7 @@
           <li class="catalog-item">
             <a href="catalog-item.html">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="img/product-2.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -222,7 +224,7 @@
           <li class="catalog-item">
             <a href="catalog-item.html">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="img/product-3.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -245,7 +247,7 @@
       </section>
       <section class="popular-manufacturer">
         <div class="popular-top-line">
-          <h2>Популярные производители</h2>
+          <h2 class="small-tittle">Популярные производители</h2>
           <a class="button button-popular" href="#">Все производители</a>
         </div>
         <ul class="manufacturer-list">
@@ -295,7 +297,7 @@
     <div class="services-wrapper">
       <section class="services container">
         <div class="about-services">
-          <h2 class="sevices-title">Сервисы</h2>
+          <h2 class="sevices-title small-tittle">Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
@@ -306,12 +308,29 @@
             <li>Гарантия</li>
             <li>Кредит</li>
           </ul>
-          <div>
+          <div class="service-chahges">
+            <div class="delivery">
             <p class="main-service-title">Доставка</p>
             <span class="main-service-about">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</span>
+            </div>
+            <div class="garantee">
+            <p class="main-service-title">Гарантия</p>
+            <span class="main-service-about">
+Если купленный у нас товар поломается или заискрит, <br>
+а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии.
+Мы обменяем сгоревший товар на новый.<br>
+Дом уж восстановите как-нибудь сами.</span>
+            </div>
+            <div class="credit">
+            <p class="main-service-title">Кредит</p>
+            <span class="main-service-about">
+Залезть в долговую яму стало проще! <br>
+Кредитные консультанты придут вам на помощь.</span>
+<a class="button credit-button" href="#">Отправить заявку</a>
+            </div>
           </div>
         </div>
     </div>
@@ -321,7 +340,7 @@
         <div>
           <h2 class="visually-hidden">О компании</h2>
           <section class="about-company">
-            <h3>КОМПАНИЯ «Техномарт»</h3>
+            <h3 class="page-title">КОМПАНИЯ «Техномарт»</h3>
             <p>
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
             </p>
@@ -338,7 +357,7 @@
         </div>
         <div>
           <section class="contacts">
-            <h3>Контакты</h3>
+            <h3 class="page-title">Контакты</h3>
             <p>Вы можете забрать товар сами,<br>
               заехав в наш офис:
             </p>
