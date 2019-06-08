@@ -115,7 +115,7 @@
                 <img src="img/Slaider-Drill.jpg" width="620" height="266" alt="Мужчина с дрелью" class="img-slaider">
                 <img src="img/dots-no.svg" width="10" height="10" class="dots-left">
                 <img src="img/dots-yes.svg" width="10" height="10" class="dots-right">
-                  <a class="button button-slaider" href="#">Открыть каталог</a>
+                <a class="button button-slaider" href="#">Открыть каталог</a>
               </div>
               <div class="slaider-perforator">
                 <p class="slaider-title">
@@ -124,7 +124,7 @@
                 <img src="img/Slaider-perforator.jpg" width="620" height="266" alt="Мужчина с дрелью" class="img-slaider">
                 <img src="img/dots-yes.svg" width="10" height="10" class="dots-left">
                 <img src="img/dots-no.svg" width="10" height="10" class="dots-right">
-                  <a class="button button-slaider" href="#">Открыть каталог</a>
+                <a class="button button-slaider" href="#">Открыть каталог</a>
               </div>
             </li>
             <div>
@@ -157,7 +157,7 @@
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-              <div class="flag flag-new">новинка</div>
+            <div class="flag flag-new">новинка</div>
             <a href="catalog-item.html">
 
               <div class="actions">
@@ -308,28 +308,29 @@
             <li>Гарантия</li>
             <li>Кредит</li>
           </ul>
+
           <div class="service-chahges">
             <div class="delivery">
-            <p class="main-service-title">Доставка</p>
-            <span class="main-service-about">Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!</span>
+              <p class="main-service-title">Доставка</p>
+              <span class="main-service-about">Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!</span>
             </div>
             <div class="garantee">
-            <p class="main-service-title">Гарантия</p>
-            <span class="main-service-about">
-Если купленный у нас товар поломается или заискрит, <br>
-а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии.
-Мы обменяем сгоревший товар на новый.<br>
-Дом уж восстановите как-нибудь сами.</span>
+              <p class="main-service-title">Гарантия</p>
+              <span class="main-service-about">
+                Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии.
+                Мы обменяем сгоревший товар на новый.<br>
+                Дом уж восстановите как-нибудь сами.</span>
             </div>
             <div class="credit">
-            <p class="main-service-title">Кредит</p>
-            <span class="main-service-about">
-Залезть в долговую яму стало проще! <br>
-Кредитные консультанты придут вам на помощь.</span>
-<a class="button credit-button" href="#">Отправить заявку</a>
+              <p class="main-service-title">Кредит</p>
+              <span class="main-service-about">
+                Залезть в долговую яму стало проще! <br>
+                Кредитные консультанты придут вам на помощь.</span>
+              <a class="button credit-button" href="#">Отправить заявку</a>
             </div>
           </div>
         </div>
@@ -364,7 +365,7 @@
             <a href="#" class="map" arai-label="Открыть карту проезда в большом формате">
               <img src="img/mapmini.jpg" width="300" height="159" alt="Наш офис находится по адресу г. Санкт-Петербург, ул. Конюшенная, д. 19/8">
             </a>
-            <a class="button" href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+            <a class="button write-us" href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
           </section>
         </div>
       </article>
@@ -375,31 +376,36 @@
         <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="about-writer-form">
             <label for="name">Ваше имя</label>
-            <input  class="write-input" type="text" id="name" placeholder="Имя Фамилия">
+            <input class="write-input" type="text" id="name" placeholder="Имя Фамилия">
           </p>
           <p class="about-writer-form">
             <label for="email">Ваш e-mail</label>
-            <input class="write-input" type="text" id="email" placeholder="email@example.com">
+            <input class="write-input write-email" type="text" id="email" placeholder="email@example.com">
           </p>
           <p class="writer-text">
             <label for="rewiews">Текст письма</label>
-            <textarea class="write-input" id="rewiews" placeholder="В свободной форме"></textarea>
+            <textarea class="write-input write-text" id="rewiews" placeholder="В свободной форме"></textarea>
           </p>
+
+          <button class="button  rewiews-button" type="submit">
+            Отправить
+          </button>
         </form>
-        <button class="button  rewiews-button" type="submit">
-          Отправить
-        </button>
         <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-          <img src="img/icon-close.svg">
+
         </button>
       </section>
-      <!-- <section class="big-map">
-        <img src="img/mapbig.jpg" width="940" height="446" alt="Наш офис находится по адресу г. Санкт-Петербург, ул. Конюшенная, д. 19/8">
-        </a>
+      <section class="big-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBFL62CzcB" width="940" height="446" allowfullscreen></iframe>
+        <span><img src="img/mapbig.jpg" width="940" height="446" alt="Наш офис находится по адресу г. Санкт-Петербург, ул. Конюшенная, д. 19/8"></span>
+
         <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-          <img src="img/icon-close.svg">
-      </section> -->
+
+        </button>
+      </section>
     </div>
+    <div class="overlay"></div>
   </main>
   <footer class="main-footer">
     <div class="footer-top-line">
@@ -468,6 +474,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/all.js"></script>
 </body>
 
 </html>

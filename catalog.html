@@ -30,9 +30,9 @@
           <p class="likes">
             Закладки: <span>0 </span></p>
         </a>
-        <a href="#" class="marks full-basket">
+        <a href="#" class="marks main-basket">
           <p class="basket">
-            Корзина: <span>10</span></p>
+            Корзина: <span class="link-counter">0</span></p>
         </a>
         <a href="#" class="checkout">Оформить заказ</a>
       </div>
@@ -113,10 +113,10 @@
                 <div class="range-toggle range-toggle-max"></div>
               </div>
               <div class="price-controls">
-       <input class="min-price" type="text" name="min-price" value="0">
-         <span class="between">-</span>
-       <input class="max-price" type="text" name="max-price" value="30000">
-      </div>
+                <input class="min-price" type="text" name="min-price" value="0">
+                <span class="between">-</span>
+                <input class="max-price" type="text" name="max-price" value="30000">
+              </div>
             </div>
             <div class="manufacturer-filter">
               <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -176,10 +176,10 @@
             <div class="sort">
               <h4 class="sort-title">Сортировка</h4>
               <a class="sort-price sort-active">по цене</a>
-              <a href="#"class="sort-price sort-type">по типу</a>
+              <a href="#" class="sort-price sort-type">по типу</a>
               <a href="#" class="sort-price sort-function">по функционалу</a>
-              <button class="sort-indicate indicate-active" type="button">  </button>
-              <button class="sort-indicate" type="button">  </button>
+              <button class="sort-indicate indicate-active" type="button"> </button>
+              <button class="sort-indicate" type="button"> </button>
             </div>
             <ul class="catalog-list">
               <li class="catalog-item catalog-item--catalog">
@@ -399,9 +399,10 @@
         <a class="button modal-basket-go-button" href="#">Продолжить покупки</a>
       </div>
       <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-        <img src="img/icon-close.svg">
+
       </button>
     </section>
+
     <div class="overlay"></div>
 
   </main>
@@ -472,9 +473,8 @@
       </div>
     </div>
   </footer>
-</body>
-
-</html>
+  <script src="js/catalog.js">
+  </script>
 </body>
 
 </html>
