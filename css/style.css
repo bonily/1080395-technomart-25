@@ -2167,13 +2167,14 @@ padding: 0;
 .purchase::before {
   content: "";
   position: absolute;
-  background-image: url("../img/GreenOk.svg");
+  background-image: url('../img/GreenOk.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 66px;
   height: 66px;
   top: 0;
   left: 0;
+  z-index: 6;
 }
 
 .modal-basket-wrapper {
