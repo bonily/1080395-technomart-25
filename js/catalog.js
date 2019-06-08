@@ -1,17 +1,12 @@
 var popupBasket = document.querySelector(".modal-basket-tools");
-var buttonBasket = document.querySelector(".buy");
+var button = document.querySelectorAll(".buy");
 var closeBasket = popupBasket.querySelector(".modal-close");
 var overlay = document.querySelector(".overlay");
 var mainBasket = document.querySelector('.main-basket');
 var counter = document.querySelector('.link-counter');
 
 
-buttonBasket.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popupBasket.classList.add("modal-show");
-  overlay.classList.add("modal-show");
-  mainBasket.classList.add("full-basket");
-});
+
 
 closeBasket.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -41,10 +36,15 @@ window.addEventListener("keydown", function (evt) {
 
  function onButtonClick(evt) {
  evt.preventDefault();
-
  var getNum = parseInt(counter.textContent, 10);
  getNum++;
  counter.textContent = getNum;
- }
+ popupBasket.classList.add("modal-show");
+ overlay.classList.add("modal-show");
+ mainBasket.classList.add("full-basket");
+}
 
- buttonBasket.addEventListener('click', onButtonClick);
+
+ for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener('click', onButtonClick);
+}
