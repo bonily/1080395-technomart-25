@@ -4,7 +4,8 @@ var closeBasket = popupBasket.querySelector(".modal-close");
 var overlay = document.querySelector(".overlay");
 var mainBasket = document.querySelector('.main-basket');
 var counter = document.querySelector('.link-counter');
-
+var mainBasket = document.querySelector('.main-basket');
+var counter = document.querySelector('.link-counter');
 
 
 
