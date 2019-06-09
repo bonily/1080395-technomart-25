@@ -1178,6 +1178,7 @@ ul.breadcrumbs li:last-child::after {
     display: flex;
     text-transform: uppercase;
     margin-bottom: 20px;
+    max-height: 38px;
 }
 
 .sort a {
@@ -1186,6 +1187,7 @@ ul.breadcrumbs li:last-child::after {
     line-height: 18px;
     border-bottom: 2px dotted red;
     padding-top: 11px;
+    color: #c8c4bf;
 }
 
 .sort a.sort-active {
@@ -1193,6 +1195,7 @@ ul.breadcrumbs li:last-child::after {
     opacity: 1;
     border-bottom: none;
     padding-right: 70px;
+    min-width:  55px;
 }
 
 .sort-type {
@@ -1208,7 +1211,8 @@ button.sort-indicate {
     width: 11px;
     height: 10px;
     background-image: url('../img/icon-down-dir.svg');
-    margin-right: 18px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
     margin-top: 12px;
     opacity: 0.3;
     background-color: inherit;
@@ -1219,7 +1223,7 @@ button.indicate-active {
     opacity: 1;
 }
 
-.catalog h4.sort-title {
+ h4.sort-title {
     margin-right: 143px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1231,8 +1235,7 @@ button.indicate-active {
     margin-block-start: 0em;
     -webkit-margin-after: 0em;
     margin-block-end: 0em;
-    min-height: 38px;
-    margin-bottom: 0px;
+      margin-bottom: 0px;
     padding-top: 9px;
     padding-left: 19px;
 }
@@ -1305,8 +1308,8 @@ button.indicate-active {
 .between {
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 0px;
+    line-height: 0px;
 }
 
 .price-filter {
