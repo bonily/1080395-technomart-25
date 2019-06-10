@@ -6,7 +6,6 @@
   <title>ТEХНОМАРТ.Интерет-магазин строительных материалов</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap" rel="stylesheet">
-
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -15,7 +14,7 @@
   <header class="main-header">
     <div class="main-topline-wrapper">
       <div class="header-top-line container">
-        <a class="main-header-logo"><img class="logo-image" src="img/logo-technomart.svg" width=110 height=20 alt="Логотип магазина 'Техномарт'" width="109" height="19"></a>
+        <a class="main-header-logo"><img class="logo-image" src="img/logo-technomart.svg" width=110 height=20 alt="Логотип магазина 'Техномарт'"></a>
         <div class="main-search">
           <form class="search" method="POST" action="#">
             <input class="search-input" type="search" id="searchInput" placeholder="Поиск:" aria-label="Поиск по сайту">
@@ -28,9 +27,9 @@
             </button>
           </form>
         </div>
-        <a href="#" class="marks">
+        <a href="#" class="marks main-likes">
           <p class="likes">
-            Закладки: <span>0 </span></p>
+            Закладки: <span class="mark-counter">0</span></p>
         </a>
         <a href="#" class="marks main-basket">
           <p class="basket">
@@ -39,7 +38,6 @@
         <a href="#" class="checkout">Оформить заказ</a>
       </div>
     </div>
-
     <div class="container">
       <div class="header-middle-line">
         <h1 class="main-title">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
@@ -57,8 +55,6 @@
           <li class="registration"><a href="#" class="registration-link">Регистрация</a></li>
         </ul>
       </div>
-
-
       <div class="header-bottom-line">
         <nav class="main-nav" aria-label="Навигация по сайту">
           <ul class="site-navigation">
@@ -98,7 +94,6 @@
               </li>
               <li>
                 <div class="main-catalog-button button-technics" aria-label="Техника">Техника
-
                   <div class="small-catalog-button"><a href="catalog.html">
                       <span class="about-catalog">Для стройки</span></a>
                   </div>
@@ -108,15 +103,15 @@
           </div>
           <div class="catalog-double-line">
             <div class="slider-place">
-              <a href="#"><img src="img/icon-left.svg" class="icon-left" width=22 height=40 alt="Следующий слайд"></a>
-              <a href="#"><img src="img/icon-left.svg" class="icon-right" width=22 height=40 alt="Предыдущий слайд"></a>
+              <button type="button" class="left-side icon-left" aria-label="Следующий слайд"></button>
+              <button type="button" class="right-side icon-right" aria-label="Предыдущий слайд"></button>
+              <div class="button-dots dots-left dots-not-active" aria-label="Активный слайд"></div>
+              <div class="button-dots dots-right" aria-label="Неактивный слайд"></div>
               <div class="slaider-drill">
                 <p class="slaider-title">
                   Дрели<br>
                   <span class="slaider-text">Соседям на радость!</span></p>
                 <img src="img/slaider-drill.jpg" width="620" height="266" alt="Мужчина с дрелью" class="img-slaider">
-                <img src="img/dots-no.svg" width="10" height="10" class="dots-left" alt="Слайд с перфоратором неактивен">
-                <img src="img/dots-yes.svg" width="10" height="10" class="dots-right" alt="Слайд с дрелью активен">
                 <a class="button button-slaider" href="catalog.html">Открыть каталог</a>
               </div>
               <div class="slaider-perforator">
@@ -124,8 +119,6 @@
                   Перфораторы<br>
                   <span class="slaider-text">Настоящие мужские игрушки!</span></p>
                 <img src="img/slaider-perforator.jpg" width="620" height="266" alt="Мужчина с перфоратором" class="img-slaider">
-                <img src="img/dots-yes.svg" width="10" height="10" class="dots-left" alt="Слайд с перфоратором активен">
-                <img src="img/dots-no.svg" width="10" height="10" class="dots-right" alt="Слайд с дрелью неактивен">
                 <a class="button button-slaider" href="catalog.html">Открыть каталог</a>
               </div>
             </div>
@@ -151,15 +144,12 @@
         </nav>
       </section>
       <section class="popular-goods">
-
         <div class="popular-top-line">
           <h2 class="small-tittle">Популярные товары</h2>
           <a class="button button-popular" href="">Все популярные товары</a>
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <div class="flag flag-new">новинка</div>
-
             <div class="actions">
               <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
               <a href="#" class="bookmark">В закладки</a>
@@ -176,17 +166,13 @@
                 25500 р.
               </span>
             </p>
-
           </li>
-
           <li class="catalog-item">
-
             <div class="actions">
               <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <img src="img/product-1.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-
             <h5>
               Перфоратор BOSCH BFG 3000
             </h5>
@@ -198,16 +184,13 @@
                 15500 р.
               </span>
             </p>
-
           </li>
           <li class="catalog-item">
-
             <div class="actions">
               <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <img src="img/product-2.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-
             <h5>
               Перфоратор BOSCH BFG 6000
             </h5>
@@ -219,16 +202,14 @@
                 22500 р.
               </span>
             </p>
-
           </li>
           <li class="catalog-item">
-
+            <div class="flag flag-new">новинка</div>
             <div class="actions">
               <a href="#" class="buy"><span class="buy-icon">Купить</span></a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <img src="img/product-3.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-
             <h5>
               Перфоратор BOSCH BFG 2000
             </h5>
@@ -239,11 +220,8 @@
                 15500 р.
               </span>
             </p>
-
           </li>
-
         </ul>
-
       </section>
       <section class="popular-manufacturer">
         <div class="popular-top-line">
@@ -304,11 +282,10 @@
         </div>
         <div class="main-service">
           <ul class="services-navigation">
-            <li class="main-services">Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li><button type="submit" class="main-services">Доставка</button></li>
+            <li><button type="submit">Гарантия</button></li>
+            <li><button type="submit">Кредит</button></li>
           </ul>
-
           <div class="service-chahges">
             <div class="delivery">
               <p class="main-service-title">Доставка</p>
@@ -336,7 +313,6 @@
         </div>
       </section>
     </div>
-
     <div class="container">
       <article class="company">
         <div>
@@ -370,7 +346,6 @@
           </section>
         </div>
       </article>
-
       <section class="write-reviews">
         <div class="write-reviews-topline"></div>
         <h2 class="visually-hidden">Написать письмо</h2>
@@ -387,22 +362,18 @@
             <label for="rewiews">Текст письма</label>
             <textarea class="write-input write-text" id="rewiews" placeholder="В свободной форме"></textarea>
           </p>
-
           <button class="button  rewiews-button" type="submit">
             Отправить
           </button>
         </form>
         <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-
         </button>
       </section>
       <section class="big-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBFL62CzcB" width="940" height="446" allowfullscreen></iframe>
         <span><img src="img/map-big.jpg" width="940" height="446" alt="Наш офис находится по адресу г. Санкт-Петербург, ул. Конюшенная, д. 19/8"></span>
-
         <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-
         </button>
       </section>
     </div>
@@ -416,7 +387,6 @@
         <a class="button modal-basket-go-button" href="#">Продолжить покупки</a>
       </div>
       <button class="modal-close close-basket" type="button" aria-label="Закрыть модальное окно">
-
       </button>
     </section>
     <div class="overlay"></div>
@@ -425,7 +395,7 @@
     <div class="footer-top-line">
       <div class="container">
         <div class="footer-top-line-wrapper">
-          <a class="main-footer-logo"><img src="img/logo-technomart.svg" width=110 height=20 class="logo-image" alt="Логотип магазина 'Техномарт'"></a>
+          <a class="main-footer-logo"><img src="img/logo-technomart.svg" width=138 height=23 class="logo-image" alt="Логотип магазина 'Техномарт'"></a>
           <nav class="main-footer-navigation" aria-label="Навигация по сайту">
             <ul class="main-footer-navigation">
               <li><a href="#">Компания</a></li>
@@ -488,7 +458,6 @@
       </div>
     </div>
   </footer>
-
   <script src="js/all.mini.js"></script>
 </body>
 

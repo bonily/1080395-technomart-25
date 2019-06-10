@@ -8,7 +8,13 @@ body {
     color: #000000;
     background-color: #ffffff;
 }
-
+/* body {
+  box-sizing: border-box;
+  background-image: url("../img/technomart-index.jpg");
+  background-size: 1200px auto;
+  background-position: center 1px;
+  opacity: 0.5;
+} */
 .main-header {
     margin-bottom: 23px;
     min-height: 320px;
@@ -529,18 +535,10 @@ a.users-navigation {
 
 ul.breadcrumbs {
     display: inline-block;
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    -webkit-padding-start: 0px;
-    padding-inline-start: 0px;
+
     margin-bottom: 17px;
 }
 
@@ -593,15 +591,10 @@ ul.breadcrumbs li:last-child::after {
     display: -ms-flexbox;
     display: flex;
     min-height: 55px;
+    padding-left: 22px;
+    padding-right: 25px;
 }
 
-.site-navigation li:nth-child(1) a {
-    padding-left: 52px;
-}
-
-.site-navigation li:nth-child(7) a {
-    padding-right: 55px;
-}
 
 .main-nav a {
     -webkit-box-sizing: border-box;
@@ -617,6 +610,7 @@ ul.breadcrumbs li:last-child::after {
     padding-left: 30px;
     padding-right: 31px;
     padding-top: 20px;
+    min-height: 55px;
 }
 
 .main-nav a:hover {
@@ -634,21 +628,15 @@ ul.breadcrumbs li:last-child::after {
 }
 
 .small-tittle {
+  margin: 0px;
+  padding: 0px;
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
     color: #000000;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    padding-left: 29px;
+        padding-left: 29px;
     padding-top: 30px;
 }
 
@@ -693,15 +681,10 @@ ul.breadcrumbs li:last-child::after {
     margin-bottom: 32px;
 }
 .main-catalog-double {
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   display: block;
   list-style-type: disc;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
 }
 
 .main-catalog-button {
@@ -856,20 +839,36 @@ ul.breadcrumbs li:last-child::after {
 
 .icon-left {
     position: absolute;
+  display: block;
+  background-color: transparent;
+  border: 0;
+    background-image: url('../img/icon-left.svg');
+    background-repeat: repeat;
+    width: 22px;
+    height: 40px;
     z-index: 20;
     top: 112px;
     left: 24px;
+    cursor: pointer;
 
 }
 
 .icon-right {
     position: absolute;
     z-index: 20;
+    display: block;
+    background-color: transparent;
+    border: 0;
+      background-image: url('../img/icon-left.svg');
+      background-repeat: repeat;
+      width: 22px;
+      height: 40px;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     top: 112px;
     left: 580px;
+    cursor: pointer;
 
 }
 
@@ -889,15 +888,30 @@ ul.breadcrumbs li:last-child::after {
     background-color: #ba2732;
 }
 
+.button-dots {
+  width: 6px;
+  height: 6px;
+  background: #ee3643;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  z-index: 20;
+  }
+  .dots-not-active {
+    background-color: #ffffff;
+  }
+
 .dots-left {
     position: absolute;
-    top: 225px;
+    top: 220px;
     left: 294px;
 }
 
 .dots-right {
     position: absolute;
-    top: 225px;
+    top: 220px;
     left: 314px;
 }
 
@@ -926,24 +940,15 @@ ul.breadcrumbs li:last-child::after {
 }
 
 .catalog-list {
+  margin: 0px;
+  padding: 0px;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0px;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    -webkit-padding-start: 0px;
-    padding-inline-start: 0px;
-}
+    }
 
 .catalog-item {
     -webkit-box-sizing: border-box;
@@ -1046,6 +1051,12 @@ ul.breadcrumbs li:last-child::after {
     display: block;
 }
 
+.catalog-item:hover .flag-new {
+    display: none;
+}
+
+
+
 .catalog-item:hover .catalog-item-image {
     opacity: 0;
 }
@@ -1114,14 +1125,6 @@ ul.breadcrumbs li:last-child::after {
     text-transform: uppercase;
     padding: 0px;
     margin: 0px;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
 }
 
 .title-catalog {
@@ -1135,40 +1138,35 @@ ul.breadcrumbs li:last-child::after {
     padding-left: 28px;
 }
 
-.catalog h4 {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    line-height: 18px;
-    text-transform: uppercase;
-    background-color: #f7f3ec;
-    font-weight: 400;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    min-height: 38px;
-    margin-bottom: 20px;
-    padding-top: 9px;
-    padding-left: 19px;
+
+.all-filters
+{
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-top: 9px;
+  padding-left: 19px;
 }
 
 .catalog-item h5 {
+  display: block;
+  margin: 0px;
+  padding: 0px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 18px;
     line-height: 20px;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
     min-height: 40px;
     padding: 0 25px;
-    margin-top: 3px;
-    margin-bottom: 14px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+
 }
 
 .sort {
@@ -1178,7 +1176,8 @@ ul.breadcrumbs li:last-child::after {
     display: flex;
     text-transform: uppercase;
     margin-bottom: 20px;
-    max-height: 38px;
+    min-height: 38px;
+
 }
 
 .sort a {
@@ -1224,6 +1223,8 @@ button.indicate-active {
 }
 
  h4.sort-title {
+   margin: 0px;
+   padding: 0px;
     margin-right: 143px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1231,11 +1232,7 @@ button.indicate-active {
     text-transform: uppercase;
     background-color: #f7f3ec;
     font-weight: 400;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-      margin-bottom: 0px;
+    margin-bottom: 0px;
     padding-top: 9px;
     padding-left: 19px;
 }
@@ -1298,7 +1295,7 @@ button.indicate-active {
     text-align: center;
     font-size: 17px;
     line-height: 18px;
-    padding-top: 11px;
+    padding-top: 13px;
     padding-bottom: 11px;
     border: none;
     border-radius: 3px;
@@ -1306,8 +1303,8 @@ button.indicate-active {
 }
 
 .between {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
     font-size: 0px;
     line-height: 0px;
 }
@@ -1331,8 +1328,17 @@ button.indicate-active {
     font-size: 17px;
     line-height: 30px;
     font-weight: bold;
-    padding-top: 16px;
-    padding-bottom: 11px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+}
+h3.price-title {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 11px;
 }
 
 .max-price {
@@ -1361,15 +1367,11 @@ button.indicate-active {
     margin-bottom: 60px;
 }
 ul.manufacturer {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   display: block;
   list-style-type: disc;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
+
 }
 
 
@@ -1422,20 +1424,10 @@ li.filter-option {
 }
 
 ul.pagination {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     list-style-type: disc;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    -webkit-padding-start: 0px;
-    padding-inline-start: 0px;
-    margin-top: 32px;
+      margin-top: 32px;
 }
 
 .pagination li {
@@ -1490,6 +1482,8 @@ li.pagination-list-active a {
 }
 
 .manufacturer-list {
+  margin: 0px;
+  padding: 0px;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1500,17 +1494,7 @@ li.pagination-list-active a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    -webkit-padding-start: 0px;
-    padding-inline-start: 0px;
-    margin-bottom: 65px;
+      margin-bottom: 65px;
 }
 
 .manufacturer-item {
@@ -1583,7 +1567,11 @@ li.pagination-list-active a {
     min-height: 520px;
 }
 
-.services-navigation li {
+ul.services-navigation {
+  list-style: none;
+}
+
+.services-navigation button {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
@@ -1599,15 +1587,18 @@ li.pagination-list-active a {
     padding-bottom: 17px;
     margin-bottom: 1px;
     -webkit-box-shadow: 0 1px 0 0 #2b364a;
-    box-shadow: 0 1px 0 0 #2b364a;
+box-shadow:  0 1px 0 0 #2b364a;
+border: 0;
+cursor: pointer;
+text-align: left;
 }
 
-.services-navigation li:hover {
+.services-navigation button:hover {
     background-color: #293449;
     color: #ffffff;
 }
 
-.services-navigation li:active {
+.services-navigation button:active {
     background-color: #ffffff;
     color: #000000;
     -webkit-box-shadow: none;
@@ -1625,7 +1616,7 @@ li.pagination-list-active a {
     margin-bottom: 17px;
 }
 
-li.main-services {
+button.main-services {
     background-color: #ffffff;
     color: #32425c;
 }
@@ -1708,14 +1699,8 @@ li.main-services {
 }
 
 .about-company p {
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
+    margin: 0px;
+    padding: 0px;
     padding-top: 25px;
 }
 
@@ -1733,23 +1718,14 @@ li.main-services {
 }
 
 .delivery-companies {
+  margin: 0px;
+  padding: 0px;
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    -webkit-padding-start: 0px;
-    padding-inline-start: 0px;
+
 }
 
 .delivery-companies li::before {
@@ -2106,7 +2082,7 @@ p.mailto {
     text-transform: uppercase;
 }
 
-del {
+.catalog-item-price del {
     display: block;
     padding-left: 6px;
     font-size: 17px;
@@ -2139,6 +2115,7 @@ del {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 9px;
+    max-height: 38px;
 }
 
 .filter-button {
@@ -2290,16 +2267,8 @@ p.writer-text {
 
 .reviews-form p {
     display: block;
-    margin: 0;
-    padding: 0;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .reviews-form {

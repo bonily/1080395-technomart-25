@@ -2,16 +2,17 @@
 var write = document.querySelector(".write-us");
 var popup = document.querySelector(".write-reviews");
 var overlay = document.querySelector(".overlay");
-
 var overlay = document.querySelector(".overlay");
 var map = document.querySelector(".map");
 var popupMap = document.querySelector(".big-map");
-
 var popupBasket = document.querySelector(".modal-basket-tools");
 var button = document.querySelectorAll(".buy");
 var mainBasket = document.querySelector(".main-basket");
 var counter = document.querySelector(".link-counter");
 var closeBasket = document.querySelector(".close-basket");
+var mark = document.querySelector(".main-likes");
+var bookmarks = document.querySelectorAll(".bookmark");
+var bookmarksCounter = document.querySelector(".mark-counter");
 
 if (popup || popupMap) {
   var close = popup.querySelector(".modal-close");
@@ -155,7 +156,6 @@ window.addEventListener("keydown", function (evt) {
  mainBasket.classList.add("full-basket");
 }
 
-
  for (var i = 0; i < button.length; i++) {
   button[i].addEventListener('click', onButtonClick);
 };
@@ -165,3 +165,17 @@ closeBasket.addEventListener("click", function(evt) {
   popupBasket.classList.remove("modal-show");
   overlay.classList.remove("modal-show");
   });
+
+
+  function onBookmarkClick(evt) {
+  evt.preventDefault();
+  var getNum = parseInt(bookmarksCounter.textContent, 10);
+  getNum++;
+  bookmarksCounter.textContent = getNum;
+  mark.classList.add("full-basket");
+ }
+
+
+ for (var i = 0; i < bookmarks.length; i++) {
+   bookmarks[i].addEventListener('click', onBookmarkClick);
+ }
