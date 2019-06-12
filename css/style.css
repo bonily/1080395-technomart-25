@@ -295,9 +295,9 @@ a {
   font-style: italic;
   margin: 0;
   padding: 0;
-  width: 198px;
   padding-left: 52px;
   padding-top: 2px;
+  max-width: 198px;
 }
 
 .header-middle-line a {
@@ -530,6 +530,7 @@ a.users-navigation {
 
 ul.breadcrumbs {
   display: inline-block;
+  vertical-align: top;
   margin: 0px;
   padding: 0px;
   -webkit-margin-before: 0em;
@@ -804,6 +805,7 @@ ul.breadcrumbs li:last-child::after {
 }
 
 .slaider-text {
+  display: block;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -812,6 +814,7 @@ ul.breadcrumbs li:last-child::after {
   padding-left: 3px;
   padding: 0;
   margin: 0;
+  padding-top: 10px;
 }
 
 .slaider-title {
@@ -827,6 +830,7 @@ ul.breadcrumbs li:last-child::after {
   top: 23px;
   left: 23px;
   color: #ffffff;
+
 }
 
 .slider-place {
@@ -954,6 +958,7 @@ ul.breadcrumbs li:last-child::after {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 220px;
   min-height: 317px;
   text-align: center;
@@ -1445,6 +1450,7 @@ ul.pagination {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: top;
   line-height: 18px;
   border: 1px solid #e5e5e5;
   min-width: 36px;
@@ -1573,9 +1579,11 @@ li.pagination-list-active a {
   padding-top: 68px;
 }
 
-.about-services p {
+.good-shop {
   margin: 0;
   margin-top: 28px;
+  display: block;
+  max-width: 405px;
 }
 
 .services-wrapper {
@@ -1666,7 +1674,8 @@ button.main-services {
 
 .main-service-about {
   display: block;
-  max-width: 380px;
+
+
 }
 
 .main-service {
@@ -1683,6 +1692,9 @@ button.main-services {
   background-position: right 72px;
   position: absolute;
 }
+.about-delivery {
+  max-width: 280px;
+}
 
 .garantee {
   display: none;
@@ -1692,6 +1704,9 @@ button.main-services {
   background-position: right 48px;
   position: absolute;
 }
+.about-garantee{
+  max-width: 375px;
+}
 
 .credit {
   display: none;
@@ -1700,6 +1715,9 @@ button.main-services {
   background: url('../img/credit.png') no-repeat;
   background-position: right 48px;
   position: absolute;
+}
+.about-credit{
+  max-width: 280px;
 }
 
 .active-service {
@@ -2154,7 +2172,7 @@ p.mailto {
   padding: 9px 38px;
 }
 
-input[type="checkbox"]+span {
+input.filter-input[type="checkbox"]+span {
   position: absolute;
   left: 0px;
   top: 0;
@@ -2164,20 +2182,20 @@ input[type="checkbox"]+span {
   opacity: 0.8;
 }
 
-input[type="checkbox"]+span:hover {
+input.filter-input[type="checkbox"]+span:hover {
   opacity: 1;
 }
 
 
-input[type="checkbox"]:checked+span {
+input.filter-input[type="checkbox"]:checked+span {
   background: url(../img/checkbox-on.svg) no-repeat;
   opacity: 0.8;
 }
-input[type="checkbox"]:checked+span:hover {
+input.filter-input[type="checkbox"]:checked+span:hover {
   opacity: 1;
 }
 
-input[type="radio"]+span {
+input.filter-input[type="radio"]+span {
   position: absolute;
   left: 0px;
   top: 0;
@@ -2186,15 +2204,15 @@ input[type="radio"]+span {
   background: url(../img/radio-off.svg) no-repeat;
   opacity: 0.8;
 }
-input[type="radio"]+span:hover {
+input.filter-input[type="radio"]+span:hover {
   opacity: 1;
 }
 
-input[type="radio"]:checked+span {
+input.filter-input[type="radio"]:checked+span {
   background: url(../img/radio-on.svg) no-repeat;
   opacity: 0.8;
 }
-input[type="radio"]:checked+span:hover {
+input.filter-input[type="radio"]:checked+span:hover {
   opacity: 1;
 }
 .big-map {
