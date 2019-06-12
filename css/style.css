@@ -1144,6 +1144,7 @@ ul.breadcrumbs li:last-child::after {
   margin-bottom: 20px;
   padding-top: 9px;
   padding-left: 19px;
+  min-height: 38px;
 }
 
 .catalog-item h5 {
@@ -1233,7 +1234,7 @@ button.sort-indicate {
   opacity: 1;
 }
 
-h4.sort-title {
+h4.sort-title  {
   margin: 0px;
   padding: 0px;
   margin-right: 143px;
@@ -1517,35 +1518,41 @@ li.pagination-list-active a {
   margin-bottom: 20px;
 }
 
-.manufacturer-item:nth-child(1) {
+.manufacturer-item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.manufacturer-item:nth-child(1) img {
   padding-top: 55px;
 }
 
-.manufacturer-item:nth-child(2) {
+.manufacturer-item:nth-child(2) img {
   padding-top: 50px;
 }
 
-.manufacturer-item:nth-child(3) {
+.manufacturer-item:nth-child(3) img {
   padding-top: 47px;
 }
 
-.manufacturer-item:nth-child(4) {
+.manufacturer-item:nth-child(4) img  {
   padding-top: 20px;
 }
 
-.manufacturer-item:nth-child(5) {
+.manufacturer-item:nth-child(5) img {
   padding-top: 60px;
 }
 
-.manufacturer-item:nth-child(6) {
+.manufacturer-item:nth-child(6) img {
   padding-top: 34px;
 }
 
-.manufacturer-item:nth-child(7) {
+.manufacturer-item:nth-child(7) img {
   padding-top: 28px;
 }
 
-.manufacturer-item:nth-child(8) {
+.manufacturer-item:nth-child(8) img {
   padding-top: 35px;
 }
 
@@ -1582,6 +1589,7 @@ ul.services-navigation {
 }
 
 .services-navigation button {
+
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
@@ -1629,6 +1637,8 @@ ul.services-navigation {
 button.main-services {
   background-color: #ffffff;
   color: #32425c;
+  margin-bottom: 0px;
+  box-shadow: none;
 }
 
 .service-chahges {
