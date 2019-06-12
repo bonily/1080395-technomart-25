@@ -57,6 +57,10 @@ a {
   background-color: #ca2c37;
 }
 
+.main-header-logo:active {
+  background-color: #ba2732;
+}
+
 .logo-image {
   position: absolute;
   top: 50%;
@@ -2180,6 +2184,7 @@ input.filter-input[type="checkbox"]+span {
   height: 100%;
   background: url(../img/checkbox-off.svg) no-repeat;
   opacity: 0.8;
+  min-height: 25px;
 }
 
 input.filter-input[type="checkbox"]+span:hover {
@@ -2190,6 +2195,7 @@ input.filter-input[type="checkbox"]+span:hover {
 input.filter-input[type="checkbox"]:checked+span {
   background: url(../img/checkbox-on.svg) no-repeat;
   opacity: 0.8;
+  min-height: 25px;
 }
 input.filter-input[type="checkbox"]:checked+span:hover {
   opacity: 1;
@@ -2203,6 +2209,7 @@ input.filter-input[type="radio"]+span {
   height: 100%;
   background: url(../img/radio-off.svg) no-repeat;
   opacity: 0.8;
+  min-height: 25px;
 }
 input.filter-input[type="radio"]+span:hover {
   opacity: 1;
@@ -2211,6 +2218,7 @@ input.filter-input[type="radio"]+span:hover {
 input.filter-input[type="radio"]:checked+span {
   background: url(../img/radio-on.svg) no-repeat;
   opacity: 0.8;
+  min-height: 25px;
 }
 input.filter-input[type="radio"]:checked+span:hover {
   opacity: 1;
