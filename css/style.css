@@ -1396,8 +1396,6 @@ ul.manufacturer {
 }
 
 .power label {
-  width: 25px;
-  height: 25px;
   position: relative;
 }
 
@@ -1418,9 +1416,12 @@ ul.manufacturer {
 li.filter-option {
   list-style: none;
   padding-bottom: 20px;
+
 }
 
 .filter-option label {
+  min-width: 25px;
+  min-height: 25px;
   padding-bottom: 5px;
   padding-left: 32px;
 }
